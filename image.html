@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    /* body{
+        background: url('https://youtu.be/HYsd9MV6WRg');
+                background-repeat: no-repeat;
+        background-size: cover;
+     } */
+    #background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+}   
+.image-container {
+    display: flex; /* This will align images horizontally */
+    gap: 10px; /* Space between images */
+}
+
+.image-container img {
+    max-width: 100%; /* Make sure images scale responsively */
+    height: auto;
+    align-items: center;
+        }
+        img{
+            width: 200px;
+            height: 250px;
+            margin: 10px auto;
+            border: rgb(0, 229, 255) 5px solid ;
+        }
+        /* .container{
+            width: 200px;
+            height: 30px;
+        }
+         */
+         
+         .overlay-image {
+            position: a;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            position: absolute;
+        }
+        .image1 {
+            top: 20%;
+            left: 10%;
+        }
+
+        .image2 {
+            top: 40%;
+            left: 50%;
+        }
+
+        .image3 {
+            top: 60%;
+            left: 30%;
+        }
+        </style>
+     <div class="image-container">
+        <img class="overlay-image image1" src="image 1.jpg" alt="Image 1">
+    <img class="overlay-image image2" src="image 2.jpg" alt="Image 2">
+    <img class="overlay-image image3" src="image 3.jpg" alt="Image 3">
+<div>
+    <!-- <image src="image.png"></div> -->
+
+    </image>
+    <div class="video-container">
+        <video autoplay muted loop id="background-video">
+            <source src="background.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    </div>
+</body>
+</html>
